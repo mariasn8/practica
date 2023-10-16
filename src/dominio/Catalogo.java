@@ -24,7 +24,7 @@ public class Catalogo{
 		try{
 			FileWriter fw=new FileWriter("Catalogo.csv");
 			for(Pelicula peli : pelisCatalogo){
-				fw.write(peli.getTitulo()+"\n"+peli.getDirector()+"\n"+peli.getAnnoEstreno()+"\n\n");
+				fw.write(peli.getTitulo()+","+peli.getDirector()+","+peli.getAnnoEstreno()+"\n");
 				//hay que llamar al metodo desde el objeto, no la clase
 			}
 			fw.close();
@@ -38,9 +38,9 @@ public class Catalogo{
 			File f=new File("Catalogo.csv");
 			f.createNewFile();
 			Scanner sc=new Scanner(f);  //para que lea el fichero f
-			sc.useDelimiter(" | ");  // | lo separa con: ,
+			sc.useDelimiter(",|\n");  // | lo separa con: ,
 			while(sc.hasNext()){
-				Pelicula peli=new Pelicula(sc.nextLine(), sc.nextLine(), Integer.parseInt(sc.next()));
+				Pelicula peli=new Pelicula(sc.next(), sc.next(), Integer.parseInt(sc.next()));
 				pelisCatalogo.add(peli);
 			}
 			sc.close();
@@ -49,7 +49,17 @@ public class Catalogo{
 		}
 	}
 			
-		
+	
+
+
+
+
+
+
+
+
+
+
 
 	/* public void borrarPeli(Pelicula pelicula){
 		pelisCatalogo.remove(pelicula);

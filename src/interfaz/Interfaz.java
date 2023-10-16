@@ -49,14 +49,14 @@ public class Interfaz{
 				"\t- Permite mostrar las películas del catálogo");
 		System.out.println(negrita+"FORMATO"+normal);
 		System.out.println("\tPara añadir una nueva película, se escribe:\n");
-		System.out.println("\t\t" + negrita+ "java -cp bin aplicacion.Principal anadir <'titulo'> <'director'> <año de estreno>"+normal+"\n\t\tDespués el programá preguntará por el título, director y año de estreno de la película\n");
+		System.out.println("\t\t" + negrita+ "java -cp bin aplicacion.Principal anadir <'titulo'> <'director'> <año de estreno>"+normal);
 		System.out.println("\tPara mostrar las películas del catálogo, se teclea:\n");
 		System.out.println("\t\t" + negrita + "java -cp bin aplicacion.Principal mostrar" + normal + "\n");
 		System.out.println("\tPara mostrar esta ayuda, se escribe:\n");
 		System.out.println("\t\t" + negrita +"java -cp bin aplicacion.Principal ayuda" + normal + "\n");
 		System.out.println(negrita+"EJEMPLOS"+normal);
 		System.out.println("\tEjemplo 1\n");
-		System.out.println("\t\t" + negrita +"java -cp bin aplicacion.Principal anadir 'ET' 'Steven Spielberg' 1982" + normal + "\n");
+		System.out.println("\t\t" + negrita +"java -cp bin aplicacion.Principal anadir 'Matrix' Lana Wachowsky' 1999" + normal + "\n");
 		System.out.println("\tEjemplo 2\n");
 		System.out.println("\t\t" + negrita + "java -cp bin aplicacion.Principal mostrar" + normal+ "\n");
 		System.out.println("\tEjemplo 3\n");
