@@ -1,5 +1,4 @@
 package aplicacion;
-
 import dominio.*;
 import interfaz.*;
 
