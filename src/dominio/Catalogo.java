@@ -38,7 +38,7 @@ public class Catalogo{
 			File f=new File("Catalogo.csv");
 			f.createNewFile();
 			Scanner sc=new Scanner(f);  //para que lea el fichero f
-			sc.useDelimiter(",|\n");  // | lo separa con: ,
+			sc.useDelimiter(",|\n");  // | lo separa con: , y salto de línea
 			while(sc.hasNext()){
 				Pelicula peli=new Pelicula(sc.next(), sc.next(), Integer.parseInt(sc.next()));
 				pelisCatalogo.add(peli);
@@ -50,30 +50,19 @@ public class Catalogo{
 	}
 			
 	
-
-
-
-
-
-
-
-
-
-
-
-	/* public void borrarPeli(Pelicula pelicula){
+	public void removePeli(Pelicula pelicula){
 		pelisCatalogo.remove(pelicula);
 		borrarPelis();
 	}
 
-	public void borrarPelis(Pelicula peli){
+	public void borrarPelis(){
 		try{
-			FileWriter fw=new FileWriter(Catalogo.csv);
+			FileWriter fw=new FileWriter("Catalogo.csv");
 			fw.write(" ");
 		} catch(IOException ex){
 			System.err.println(ex);
 		}
-	} */
+	} 
 
 }
 

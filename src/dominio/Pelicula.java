@@ -25,7 +25,7 @@ public class Pelicula{
 	}
 
 	public String toString(){
-		return getTitulo()+" es su título, "+getDirector()+" su director y "+getAnnoEstreno()+" su año de estreno";
+		return "El título de la película es '"+getTitulo()+"', '"+getDirector()+"' es su director y "+getAnnoEstreno()+" es su año de estreno";
 	}
 }
 
