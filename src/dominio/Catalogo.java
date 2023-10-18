@@ -3,22 +3,49 @@ package dominio;
 import java.io.*;
 import java.util.*;
 
+/**
+ * La clase catalogo permite añadir y mostrar las películas añadidas al catálogo, guarda todas las películas añadidas en un fichero
+ * @param pelisCatalogo lista de las películas añadidas 
+ *
+ */
+
 public class Catalogo{
 
 	ArrayList<Pelicula> pelisCatalogo=new ArrayList<>();
 
+	/**
+	 * Constructor sin parámetros que invoca al método leerPelis() para que cada vez que se haga referencia a la clase lea las películas que tiene guardadas, si las tiene
+	 *
+	 */
+
 	public Catalogo(){
 		leerPelis();
 	}
+
+	/**
+	 * Añade una película al catálogo escribiéndola en un fichero
+	 *
+	 */
 
 	public void addPeli(Pelicula pelicula){
 		pelisCatalogo.add(pelicula);
 		escribirPelis();
 	}
 
+	/**
+	 * Devuelve un ArrayList con la lista de películas del catálogo
+	 * @return lista de películas del catálogo
+	 *
+	 */
+
 	public ArrayList<Pelicula> getPelisCatalogo(){
 		return pelisCatalogo;
 	}
+
+	/**
+	 * Escribe las películas que se quieren añadir en un fichero para poder guradarlas
+	 *
+	 */
 
 	public void escribirPelis(){   //escribe las peliculas en el fichero (volcar)
 		try{
@@ -32,6 +59,11 @@ public class Catalogo{
 			System.err.println(ex);
 		}
 	}
+
+	/**
+	 * Permite leer las películas que están escritas en el fichero y si este no existe lo crea
+	 *
+	 */
 
 	public void leerPelis(){   //lee las pelis que hay en el fichero (cargar)
 		try{

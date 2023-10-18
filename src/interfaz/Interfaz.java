@@ -4,18 +4,27 @@ import java.util.*;
 
 import dominio.*;
 
+/**
+ * La clase Interfaz crea una interfaz que permite realizar distintas acciones, como añadir o mostrar películas, según la instrucción que se introduzca
+ *
+ */
 public class Interfaz{
 	private static String negrita = "\u001B[1m";
 	private static String normal = "\033[0m";
 	private static String rojo = "\u001B[31m";
 	private static String blanco = "\u001B[37m";
+
+	/**
+	 * Permite añadir películas al catálogo, mostrarlas y pedir una guía sobre las instrucciones que se pueden introducir
+	 *
+	 */
 	public static void ejecutar(String[] instruccion){
 
-// Si escribo `java -cp bin puntoEntrada.Principal añadir Juan García Martínez`entonces
+// Si escribo `java -cp bin aplicion.Principal añadir ET Steven Spielberg 1982`entonces
 // `instruccion[0]` es `añadir`
-// `instruccion[1]` es `Juan`
-// `instruccion[2]` es `García`
-// `instruccion[3]` es `Martínez`
+// `instruccion[1]` es `ET`
+// `instruccion[2]` es `Steven Spielberg`
+// `instruccion[3]` es `1982`
 
 		Catalogo cat = new Catalogo();
 		if (instruccion[0].equalsIgnoreCase("mostrar") && instruccion.length == 1){
