@@ -1,9 +1,8 @@
 package dominio;
 
 /**
- * La clase Pelicula es la responsable de manejar la información sobre película
- * Permite crear una película y mostrar su título, director y año de estreno
- *
+ * La clase Pelicula es la responsable de manejar la información sobre película, además permite crear una película y mostrar su título, director y año de estreno
+ * 
  */
 
 
@@ -29,7 +28,7 @@ public class Pelicula{
 
 	/**
 	 * Devuelve el título de la película
-	 * @return titulo de la película
+	 * @return título de la película
 	 *
 	 */
 	public String getTitulo(){
@@ -57,7 +56,7 @@ public class Pelicula{
 	}
 
 	/**
-	 * Devuelve una cadena de caracteres con el titulo, director y año de estreno de la película
+	 * Devuelve una cadena de caracteres con el título, director y año de estreno de la película
 	 * @return cadena de caracteres con la información de la película
 	 *
 	 */

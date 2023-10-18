@@ -5,7 +5,6 @@ import java.util.*;
 
 /**
  * La clase catalogo permite añadir y mostrar las películas añadidas al catálogo, guarda todas las películas añadidas en un fichero
- * @param pelisCatalogo lista de las películas añadidas 
  *
  */
 
@@ -14,7 +13,7 @@ public class Catalogo{
 	ArrayList<Pelicula> pelisCatalogo=new ArrayList<>();
 
 	/**
-	 * Constructor sin parámetros que invoca al método leerPelis() para que cada vez que se haga referencia a la clase lea las películas que tiene guardadas, si las tiene
+	 * Constructor sin parámetros
 	 *
 	 */
 
@@ -24,6 +23,7 @@ public class Catalogo{
 
 	/**
 	 * Añade una película al catálogo escribiéndola en un fichero
+	 * @param pelicula película a añadir
 	 *
 	 */
 
@@ -33,7 +33,7 @@ public class Catalogo{
 	}
 
 	/**
-	 * Devuelve un ArrayList con la lista de películas del catálogo
+	 * Devuelve las películas que están en el catálogo
 	 * @return lista de películas del catálogo
 	 *
 	 */
@@ -43,7 +43,7 @@ public class Catalogo{
 	}
 
 	/**
-	 * Escribe las películas que se quieren añadir en un fichero para poder guradarlas
+	 * Escribe las películas que se quieren añadir en un fichero para poder guardarlas
 	 *
 	 */
 
@@ -80,22 +80,5 @@ public class Catalogo{
 			System.err.println("No hay películas en el catálogo");
 		}
 	}
-			
-	
-	public void removePeli(Pelicula pelicula){
-		pelisCatalogo.remove(pelicula);
-		borrarPelis();
-	}
-
-	public void borrarPelis(){
-		try{
-			FileWriter fw=new FileWriter("Catalogo.csv");
-			fw.write(" ");
-		} catch(IOException ex){
-			System.err.println(ex);
-		}
-	} 
-
 }
-
 

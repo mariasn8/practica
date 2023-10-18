@@ -5,10 +5,11 @@ import java.util.*;
 import dominio.*;
 
 /**
- * La clase Interfaz crea una interfaz que permite realizar distintas acciones, como añadir o mostrar películas, según la instrucción que se introduzca
+ * La clase Interfaz crea una interfaz que permite realizar distintas acciones según la instrucción que se introduzca
  *
  */
 public class Interfaz{
+
 	private static String negrita = "\u001B[1m";
 	private static String normal = "\033[0m";
 	private static String rojo = "\u001B[31m";
@@ -16,6 +17,7 @@ public class Interfaz{
 
 	/**
 	 * Permite añadir películas al catálogo, mostrarlas y pedir una guía sobre las instrucciones que se pueden introducir
+	 * @param instruccion instrucción a ejecutar
 	 *
 	 */
 	public static void ejecutar(String[] instruccion){
@@ -37,9 +39,6 @@ public class Interfaz{
 		else if (instruccion[0].equalsIgnoreCase("ayuda") && instruccion.length == 1){
 			ayuda();
 		}
-		//else if (instruccion[0].equalsIgnoreCase("borrar") && instruccion.length == 2){
-			//cat.removePeli(getTitulo());
-		//}
 		else{
 			System.out.println(rojo + "El formato utilizado en la entrada es incorrecto" + blanco);
 			ayuda();
