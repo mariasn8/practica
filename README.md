@@ -1,14 +1,14 @@
 # Catálogo de películas
 
-Esta aplicación de un catálogo de películas permite que se añadan y muestren las películas disponibles.
+Esta aplicación de un catálogo de películas, permite que se añadan y muestren las películas que hay en él.
 
-Para descargar el proyecto en su ordenador y clonar el repositorio escriba: **`git clone https://github.com/mariasn8/practica.git`**
+##Instalación
 
-Una vez lo tiene descargado introdúzcase en él escribiendo: **`cd practica`**
+Para instalar la aplicación, introduzca: **`make jar`**
 
-Después para generar el .jar que será el archivo que podrá ejecutar, introduzca: **`make jar`**
+##Ejecución
 
-Para ejecutar el archivo .jar que acabamos de generar, teclee: **`java -jar catalogoPelis.jar <instruccion>`**
+Para ejecutar el archivo .jar que se acaba de generar, teclee: **`java -jar catalogoPelis.jar <instruccion>`**
 
 Las instrucciones que se pueden introducir son:
 	
@@ -20,11 +20,16 @@ Las instrucciones que se pueden introducir son:
 
 Ejemplos:
 
-	java -jar catalogoPelis.jar anadir <"Mujercitas"> <"Gillian Armstrong"> <1994>
+	java -jar catalogoPelis.jar anadir "Mujercitas" "Gillian Armstrong" 1994
 	
 	java -jar catalogoPelis.jar mostrar
 	
 	java -jar catalogoPelis.jar ayuda
 
+##Generación del Javadoc
+
 Por último para poder generar el javadoc de todo el proyecto escriba: **`make javadoc`**. Al hacerlo el javadoc aparecerá en el directorio (una carpeta) html
+
+//##Estructura interna de la aplicación
+//aqui iria el archivo UML
 
