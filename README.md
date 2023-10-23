@@ -2,11 +2,11 @@
 
 Esta aplicación de un catálogo de películas, permite que se añadan y muestren las películas que hay en él.
 
-##Instalación
+## Instalación
 
 Para instalar la aplicación, introduzca: **`make jar`**
 
-##Ejecución
+## Ejecución
 
 Para ejecutar el archivo .jar que se acaba de generar, teclee: **`java -jar catalogoPelis.jar <instruccion>`**
 
@@ -26,7 +26,7 @@ Ejemplos:
 	
 	java -jar catalogoPelis.jar ayuda
 
-##Generación del Javadoc
+## Generación del Javadoc
 
 Por último para poder generar el javadoc de todo el proyecto escriba: **`make javadoc`**. Al hacerlo el javadoc aparecerá en el directorio (una carpeta) html
 
