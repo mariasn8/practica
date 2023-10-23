@@ -10,7 +10,7 @@ Después para generar el .jar que será el archivo que podrá ejecutar, introduz
 
 Para ejecutar el archivo .jar que acabamos de generar, teclee: **`java -jar catalogoPelis.jar <instruccion>`**
 
-Las instrucciones que podemos introducir son:
+Las instrucciones que se pueden introducir son:
 	
 	java -jar catalogoPelis.jar anadir <"titulo"> <"director"> <año de estreno> - Permite añadir una nueva película al catálogo
 
@@ -26,5 +26,5 @@ Ejemplos:
 	
 	java -jar catalogoPelis.jar ayuda
 
-Para poder generar el javadoc de todo el proyecto escriba: **`make javadoc`**. Al hacerlo el javadoc aparecerá en el directorio(una carpeta) html
+Por último para poder generar el javadoc de todo el proyecto escriba: **`make javadoc`**. Al hacerlo el javadoc aparecerá en el directorio (una carpeta) html
 
