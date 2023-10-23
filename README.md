@@ -26,7 +26,9 @@ Ejemplos:
 	
 	java -jar catalogoPelis.jar ayuda
 
+Si al ejecutar alguno de estos comandos diese un error, borre el catálogo y creélo de nuevo.
+
 ## Generación del Javadoc
 
-Por último para poder generar el javadoc de todo el proyecto escriba: **`make javadoc`**. Al hacerlo el javadoc aparecerá en el directorio (una carpeta) html
+Por último para poder generar el javadoc de todo el proyecto escriba: **`make javadoc`**. Al hacerlo el javadoc aparecerá en el directorio (una carpeta) html.
 
