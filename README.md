@@ -30,6 +30,3 @@ Ejemplos:
 
 Por último para poder generar el javadoc de todo el proyecto escriba: **`make javadoc`**. Al hacerlo el javadoc aparecerá en el directorio (una carpeta) html
 
-//##Estructura interna de la aplicación
-//aqui iria el archivo UML
-
