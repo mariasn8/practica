@@ -28,6 +28,7 @@ public class Catalogo{
 	 */
 
 	public void addPeli(Pelicula pelicula){
+		//habitante.setId(habitantesPadron.get(habitantesPadron.size()-1).getId()+1);  //coge el ultimo habitante y le suma 1, que sera su id
 		pelisCatalogo.add(pelicula);
 		escribirPelis();
 	}
