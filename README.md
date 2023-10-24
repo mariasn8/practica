@@ -34,4 +34,4 @@ Por último para poder generar el javadoc de todo el proyecto escriba: **`make j
 
 ## Estructura de la aplicaión
 
-![diagrama](practica/class_diagram.png)
+![diagrama](class_diagram.png)
