@@ -32,3 +32,6 @@ Si al ejecutar alguno de estos comandos diese un error, borre el catálogo y cre
 
 Por último para poder generar el javadoc de todo el proyecto escriba: **`make javadoc`**. Al hacerlo el javadoc aparecerá en el directorio (una carpeta) html.
 
+## Estructura de la aplicaión
+
+![diagrama](class_diagram.png)

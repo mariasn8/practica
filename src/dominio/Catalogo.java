@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.*;
 
 /**
- * La clase catalogo permite añadir, borrar y mostrar las películas que haya en el catálogo, guardando todas las películas en un fichero
+ * La clase catalogo permite añadir y mostrar las películas añadidas al catálogo, guarda todas las películas añadidas en un fichero
  *
  */
 
@@ -28,34 +28,8 @@ public class Catalogo{
 	 */
 
 	public void addPeli(Pelicula pelicula){
-		if(!pelisCatalogo.isEmpty()) 
-			pelicula.setId(pelisCatalogo.get(pelisCatalogo.size()-1).getId()+1);
-			//coge el id de la última peli del catálogo y se suma 1
-		else
-			pelicula.setId(1);
 		pelisCatalogo.add(pelicula);
 		escribirPelis();
-	}
-
-	/**
-	 * Borra la película del catálogo y del fichero
-	 * @param pelicula película a borrar
-	 *
-	 */
-
-	public void borrarPeli(Pelicula pelicula){
-		pelisCatalogo.remove(pelicula);
-		nuevoId();
-		escribirPelis();
-	}
-
-
-	private void nuevoId(){  //pone un nuevo id a la peli para que queden ordenadosdespués de borrar una
-		int id=1;
-		for(Pelicula pelicula:pelisCatalogo){
-			pelicula.setId(id);
-			id++;
-		}
 	}
 
 	/**
@@ -75,12 +49,11 @@ public class Catalogo{
 
 	public void escribirPelis(){   //escribe las peliculas en el fichero (volcar)
 		try{
-			FileWriter fw=new FileWriter("catalogo.csv");
-
+			FileWriter fw=new FileWriter("Catalogo.csv");
 			for(Pelicula peli : pelisCatalogo){
-				fw.write(peli.getId()+","+peli.getTitulo()+","+peli.getDirector()+","+peli.getAnnoEstreno()+"\n");
+				fw.write(peli.getTitulo()+","+peli.getDirector()+","+peli.getAnnoEstreno()+"\n");
 				//hay que llamar al metodo desde el objeto, no la clase
-			} 
+			}
 			fw.close();
 		} catch(IOException ex){
 			System.err.println(ex);
@@ -99,7 +72,7 @@ public class Catalogo{
 			Scanner sc=new Scanner(f);  //para que lea el fichero f
 			sc.useDelimiter(",|\n");  // | lo separa con: , y salto de línea
 			while(sc.hasNext()){
-				Pelicula peli=new Pelicula(Integer.parseInt(sc.next()), sc.next(), sc.next(), Integer.parseInt(sc.next()));
+				Pelicula peli=new Pelicula(sc.next(), sc.next(), Integer.parseInt(sc.next()));
 				pelisCatalogo.add(peli);
 			}
 			sc.close();
