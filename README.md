@@ -16,6 +16,8 @@ Las instrucciones que se pueden introducir son:
 
 	java -jar catalogoPelis.jar mostrar - Muestra las películas que hemos añadido anteriormente. En caso de que no haya ninguna película no hará nada
 
+	java -jar catalogoPelis.jar borrar <id> - Permite borrar una película del catálogo introduciendo su id
+
 	java -jar catalogoPelis.jar ayuda - Enseña una ayuda con las instrucciones que se pueden ejecutar
 
 Ejemplos:
@@ -23,10 +25,14 @@ Ejemplos:
 	java -jar catalogoPelis.jar anadir "Mujercitas" "Gillian Armstrong" 1994
 	
 	java -jar catalogoPelis.jar mostrar
-	
+
+	java -jar catalogoPelis.jar borrar 2
+
 	java -jar catalogoPelis.jar ayuda
 
 Si al ejecutar alguno de estos comandos diese un error, borre el catálogo y creélo de nuevo.
+
+- Para poder **modificar** una película, bórrela y vuélvala a añadir con los cambios necesarios.
 
 ## Generación del Javadoc
 

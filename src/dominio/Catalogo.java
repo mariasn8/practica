@@ -50,7 +50,7 @@ public class Catalogo{
 	}
 
 
-	private void nuevoId(){  //pone un nuevo id a la peli para que queden ordenadosdespués de borrar una
+	private void nuevoId(){  //pone un nuevo id a la peli para que queden ordenados después de borrar una
 		int id=1;
 		for(Pelicula pelicula:pelisCatalogo){
 			pelicula.setId(id);
