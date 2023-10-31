@@ -32,7 +32,7 @@ Ejemplos:
 
 Si al ejecutar alguno de estos comandos diese un error, borre el catálogo y creélo de nuevo.
 
-- Para poder **modificar** una película, bórrela y vuélvala a añadir con los cambios necesarios.
+Para poder **modificar** una película, bórrela y vuélvala a añadir con los cambios necesarios.
 
 ## Generación del Javadoc
 
