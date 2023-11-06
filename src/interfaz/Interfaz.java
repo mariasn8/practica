@@ -36,11 +36,14 @@ public class Interfaz{
 			Pelicula peli = new Pelicula(instruccion[1], instruccion[2], Integer.parseInt(instruccion[3]));
 			cat.addPeli(peli);
 		}
-		else if(instruccion[0].equalsIgnoreCase("borrar") && instruccion.length == 2){
+		else if (instruccion[0].equalsIgnoreCase("borrar") && instruccion.length == 2){
 			Pelicula peli = new Pelicula(Integer.parseInt(instruccion[1]));
 			cat.borrarPeli(peli);
 		}
 		else if (instruccion[0].equalsIgnoreCase("ayuda") && instruccion.length == 1){
+			ayuda();
+		}
+		else if (instruccion.length == 0){
 			ayuda();
 		}
 		else{
