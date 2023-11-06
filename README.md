@@ -1,6 +1,6 @@
 # Catálogo de películas
 
-Esta aplicación de un catálogo de películas, permite que se añadan y muestren las películas que hay en él.
+Esta aplicación de un catálogo de películas, permite que se añadan, borren y muestren las películas que hay en él.
 
 ## Instalación
 
