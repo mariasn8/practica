@@ -40,4 +40,12 @@ Por último para poder generar el javadoc de todo el proyecto escriba: **`make j
 
 ## Estructura de la aplicaión
 
+El siguiente diagrama UML muestra los paquetes y las clases del programa.
+
+El paquete 'dominio' contiene las clases 'Pelicula.java' y 'Catalogo.java', la primera de ellas contiene las propiedades de la película y la segunda las funcionalidades del catálogo, como añadir o borrar.
+
+El paquete 'interfaz' contiene la clase 'Interfaz.java' que es la interfaz del usuario
+
+El paquete 'aplicacion' contiene la clase 'Principal.java' que es la que inicia el programa
+
 ![diagrama](class_diagram.png)
