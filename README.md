@@ -30,7 +30,7 @@ Ejemplos:
 
 	java -jar catalogoPelis.jar ayuda
 
-Si al ejecutar alguno de estos comandos diese un error, borre el catálogo y creélo de nuevo.
+Si al ejecutar alguno de estos comandos diese un error, borre el catálogo y creélo de nuevo añadiendo una película.
 
 Para poder **modificar** una película, bórrela y vuélvala a añadir con los cambios necesarios.
 
