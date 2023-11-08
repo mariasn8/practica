@@ -29,7 +29,10 @@ public class Interfaz{
 // `instruccion[3]` es `1982`
 
 		Catalogo cat = new Catalogo();
-		if (instruccion[0].equalsIgnoreCase("mostrar") && instruccion.length == 1){
+		if (instruccion.length == 0){
+			ayuda();
+		}
+		else if (instruccion[0].equalsIgnoreCase("mostrar") && instruccion.length == 1){
 			mostrarPeliculas(cat);
 		}
 		else if (instruccion[0].equalsIgnoreCase("anadir") && instruccion.length == 4){
@@ -45,9 +48,6 @@ public class Interfaz{
 			cat.modicarPeli(peli);
 		}
 		else if (instruccion[0].equalsIgnoreCase("ayuda") && instruccion.length == 1){
-			ayuda();
-		}
-		else if (instruccion.length == 0){
 			ayuda();
 		}
 		else{

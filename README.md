@@ -32,7 +32,7 @@ Ejemplos:
 
 	java -jar catalogoPelis.jar ayuda
 
-	java .jar catalogoPelis.jar modificar 2 "Mujercitas" "Gary Ross" 1998
+	java -jar catalogoPelis.jar modificar 2 "Mujercitas" "Gary Ross" 1998
 
 **Si al ejecutar alguno de estos comandos diese un error, borre el catálogo y creélo de nuevo añadiendo una película.**
 

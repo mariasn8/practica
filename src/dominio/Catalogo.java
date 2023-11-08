@@ -10,6 +10,8 @@ import java.util.*;
 
 public class Catalogo{
 
+	private String nombreFichero="Catalogo.csv";
+
 	ArrayList<Pelicula> pelisCatalogo=new ArrayList<>();
 
 	/**
@@ -90,7 +92,7 @@ public class Catalogo{
 
 	public void escribirPelis(){   //escribe las peliculas en el fichero (volcar)
 		try{
-			FileWriter fw=new FileWriter("catalogo.csv");
+			FileWriter fw=new FileWriter(nombreFichero);
 
 			for(Pelicula peli : pelisCatalogo){
 				fw.write(peli.getId()+","+peli.getTitulo()+","+peli.getDirector()+","+peli.getAnnoEstreno()+"\n");
@@ -109,7 +111,7 @@ public class Catalogo{
 
 	public void leerPelis(){   //lee las pelis que hay en el fichero (cargar)
 		try{
-			File f=new File("Catalogo.csv");
+			File f=new File(nombreFichero);
 			f.createNewFile();
 			Scanner sc=new Scanner(f);  //para que lea el fichero f
 			sc.useDelimiter(",|\n");  // | lo separa con: , y salto de línea
