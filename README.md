@@ -20,6 +20,8 @@ Las instrucciones que se pueden introducir son:
 
 	java -jar catalogoPelis.jar ayuda - Enseña una ayuda con las instrucciones que se pueden ejecutar
 
+	java -jar catalogoPelis.jar modificar <id> <nuevo titulo> <nuevo director> <nuevo año de estreno>
+
 Ejemplos:
 
 	java -jar catalogoPelis.jar anadir "Mujercitas" "Gillian Armstrong" 1994
@@ -29,6 +31,8 @@ Ejemplos:
 	java -jar catalogoPelis.jar borrar 2
 
 	java -jar catalogoPelis.jar ayuda
+
+	java .jar catalogoPelis.jar modificar 2 "Mujercitas" "Gary Ross" 1998
 
 Si al ejecutar alguno de estos comandos diese un error, borre el catálogo y creélo de nuevo añadiendo una película.
 

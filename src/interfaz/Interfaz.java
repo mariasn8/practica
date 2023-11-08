@@ -40,6 +40,10 @@ public class Interfaz{
 			Pelicula peli = new Pelicula(Integer.parseInt(instruccion[1]));
 			cat.borrarPeli(peli);
 		}
+		else if (instruccion[0].equalsIgnoreCase("modificar") && instruccion.length == 5){
+			Pelicula peli=new Pelicula(Integer.parseInt(instruccion[1]), instruccion[2], instruccion[3], Integer.parseInt(instruccion[4]));
+			cat.modicarPeli(peli);
+		}
 		else if (instruccion[0].equalsIgnoreCase("ayuda") && instruccion.length == 1){
 			ayuda();
 		}
@@ -76,6 +80,8 @@ public class Interfaz{
 		System.out.println("\t\t" + negrita +"java -jar catalogoPelis.jar ayuda" + normal + "\n");
 		System.out.println("\tPara borrar una de las películas del catálogo introduzca:\n");
 		System.out.println("\t\t" + negrita +"java -jar catalogoPelis.jar borrar <id de la película>" + normal + "\n");
+		System.out.println("\tPara modificar una de las películas del catálogo escriba:\n");
+		System.out.println("\t\t" + negrita +"java -jar catalogoPelis.jar modificar <id de la película> <'titulo modificado'> <'director modificado'> <ano de estreno modificado>" + normal + "\n");
 
 		System.out.println(negrita+"EJEMPLOS"+normal);
 		System.out.println("\tEjemplo 1\n");
@@ -86,6 +92,9 @@ public class Interfaz{
 		System.out.println("\t\t" + negrita + "java -jar catalogoPelis.jar ayuda" + normal + "\n");
 		System.out.println("\tEjemplo 4\n");
 		System.out.println("\t\t" + negrita + "java -jar catalogoPelis.jar borrar 2" + normal + "\n");
+		System.out.println("\tEjemplo 5\n");
+		System.out.println("\t\t" + negrita + "java -jar catalogoPelis.jar modificar 2 'Matrix' 'Steven Spielberg' 1989" + normal + "\n");
+
 	}
 
 }
