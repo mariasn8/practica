@@ -34,7 +34,7 @@ Ejemplos:
 
 	java .jar catalogoPelis.jar modificar 2 "Mujercitas" "Gary Ross" 1998
 
-Si al ejecutar alguno de estos comandos diese un error, borre el catálogo y creélo de nuevo añadiendo una película.
+**Si al ejecutar alguno de estos comandos diese un error, borre el catálogo y creélo de nuevo añadiendo una película.**
 
 Para poder **modificar** una película, bórrela y vuélvala a añadir con los cambios necesarios.
 
