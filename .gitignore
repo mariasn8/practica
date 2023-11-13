@@ -12,8 +12,9 @@
 .mtj.tmp/
 
 # Package Files #
-*.css
-*.js
+
+
+*.html
 *.jar
 *.war
 *.nar
