@@ -45,7 +45,9 @@ public class Interfaz{
 		}
 		else if (instruccion[0].equalsIgnoreCase("modificar") && instruccion.length == 5){
 			Pelicula peli=new Pelicula(Integer.parseInt(instruccion[1]), instruccion[2], instruccion[3], Integer.parseInt(instruccion[4]));
-			cat.modicarPeli(peli);
+			cat.borrarPeli(peli);
+			cat.addPeli(peli);
+
 		}
 		else if (instruccion[0].equalsIgnoreCase("ayuda") && instruccion.length == 1){
 			ayuda();

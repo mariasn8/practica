@@ -61,21 +61,6 @@ public class Catalogo{
 	}
 
 	/**
-	 * Modifica una película ya añadida al catálogo
-	 * @param pelicula película a modificar
-	 *
-	 */
-
-	public void modicarPeli(Pelicula pelicula){
-		pelisCatalogo.remove(pelicula);
-		nuevoId();
-		pelicula.setId(pelisCatalogo.get(pelisCatalogo.size()-1).getId()+1);
-		//suma 1 al id de la última peli
-		pelisCatalogo.add(pelicula);
-		escribirPelis();
-	}
-
-	/**
 	 * Devuelve las películas que están en el catálogo
 	 * @return lista de películas del catálogo
 	 *
